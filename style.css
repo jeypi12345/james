@@ -1,0 +1,35 @@
+.spongebob-nav {
+  display: flex;
+  gap: 250px;
+  background: #2BA4F2; /* ocean-blue backdrop */
+  padding: 50px;
+  border-radius: 20px;
+  width: 1005;
+}
+
+.nav-item {
+  position: relative;
+  padding: 12px 20px;
+  background: #F7EB32;
+  color: #000;
+  font-weight: bold;
+  border: 4px solid #000;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  width: 8px; height: 8px;
+  background: #F2C94C;
+  border-radius: 50%;
+  top: 8px; left: 8px;
+  box-shadow: 20px 5px #F2C94C, -10px 15px #F2C94C; /* simulate sponge holes */
+}
+
+.nav-item:hover {
+  transform: scale(1.1) rotate(-2deg);
+  background: #FDE24F;
+}
